@@ -1,0 +1,9 @@
+* Colors
+** Background
+*** Main Page: #E0DCDC
+
+* Sizes:
+** Window: ?
+
+* Available Buttons:
+** Window bar: ?
