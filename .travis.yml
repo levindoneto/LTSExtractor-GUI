@@ -3,10 +3,10 @@ language: java
 jdk:
   - oraclejdk8
   - oraclejdk9
-  - openjdk7
 addons:
   apt:
     packages:
       - oracle-java8-installer
+before_script: cd src/ltse/gui
 script:
-  - build.sh
+  - javac Gui.java
