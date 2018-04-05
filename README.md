@@ -17,6 +17,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
 
 ## How to use
 ```terminal
-$ javac Gui.java
-$ java Gui
+$ cd src/
+$ javac com/ltse/gui/Main.java
+$ java com/ltse/gui/Main
 ```
