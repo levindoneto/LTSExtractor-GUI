@@ -14,4 +14,12 @@ public class Bar {
             );
         }
     }
+
+    public String getIdBar () {
+        return this.idBar;
+    }
+
+    public void setIdBar(String idBar) {
+        this.idBar = idBar;
+    }
 }

@@ -14,4 +14,12 @@ public class Panel {
             );
         }
     }
+
+    public String getIdPanel () {
+        return this.idPanel;
+    }
+
+    public void setIdPanel(String idPanel) {
+        this.idPanel = idPanel;
+    }
 }
