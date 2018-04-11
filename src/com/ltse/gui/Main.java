@@ -1,8 +1,6 @@
 package com.ltse.gui;
 
-import com.ltse.gui.components.Bar;
-import com.ltse.gui.components.Button;
-import com.ltse.gui.components.Panel;
+import com.ltse.gui.components.*;
 import com.ltse.gui.exceptions.UIException;
 import com.ltse.gui.utils.UIUtils;
 
@@ -60,9 +58,10 @@ public class Main {
     }
     public static void main(String[] args) throws UIException {
         Main appGui = new Main();
-        Button loadFile = new Button("load_file");
-        Panel panel = new Panel("panel_info");
-        Bar windowBar = new Bar("window_bar");
-
+        Button loadFile = new Button("load_file", "Button");
+        Panel panel = new Panel("panel_info", "Panel");
+        Bar windowBar = new Bar("window_bar", "Bar");
+        Label labelFilter = new Label("window_bar", "Label");
+        ButtonBar buttonBarFile = new ButtonBar("window_bar", "ButtonBar");
     }
 }

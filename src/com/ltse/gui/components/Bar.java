@@ -1,25 +1,10 @@
 package com.ltse.gui.components;
+
 import com.ltse.gui.exceptions.UIException;
-import com.ltse.gui.utils.UIUtils;
 
-public class Bar {
-    private String idBar;
+public class Bar extends Component {
 
-    public Bar(String idBar) throws UIException {
-        if (idBar != null) {
-            this.idBar = idBar;
-        } else {
-            throw new UIException(
-                    UIUtils.getText("exception.ui.invalidButtonId")
-            );
-        }
-    }
-
-    public String getIdBar () {
-        return this.idBar;
-    }
-
-    public void setIdBar(String idBar) {
-        this.idBar = idBar;
+    public Bar(String idComponent, String typeComponent) throws UIException {
+        super(idComponent, typeComponent);
     }
 }
