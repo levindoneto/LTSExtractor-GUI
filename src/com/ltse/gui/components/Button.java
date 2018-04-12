@@ -9,12 +9,14 @@ import javax.swing.JPanel;
 public class Button extends Component {
 
     public Button(String idComponent,
+                  String text,
+                  String icon,
                   int positionX,
                   int positionY,
                   int height,
                   int width
     ) throws UIException, ValueException {
-        super(idComponent, "Button", positionX, positionY, height, width);
+        super(idComponent, "Button", text, icon, positionX, positionY, height, width);
         JButton button = new JButton("Click here!");
         JPanel panel = new JPanel();
 

@@ -15,6 +15,8 @@ public class Component {
     public Component(
             String idComponent,
             String typeComponent,
+            String text,
+            String icon,
             int positionX,
             int positionY,
             int height,
@@ -24,6 +26,10 @@ public class Component {
             throw new UIException(UIUtils.getText("exception.ui.invalid" + typeComponent + "Id"));
         } else if (typeComponent == null){
             throw new UIException(UIUtils.getText("exception.ui.invalidType"));
+        } else if (text == null){
+            throw new UIException(UIUtils.getText("exception.ui.invalidText"));
+        } else if (icon == null){
+            throw new UIException(UIUtils.getText("exception.ui.invalidIcon"));
         } else if (positionX <= 0){
             throw new ValueException(UIUtils.getText("exception.ui.invalidPositionX"));
         } else if (positionY <= 0){

@@ -38,7 +38,7 @@ public class Main extends JFrame {
         guiLtse.setResizable(false); // fixed size
         guiLtse.setJMenuBar(bar);
 
-        Button upFileFilter = new Button("upFileFilter", 10, 20, 100, 400);
+        Button upFileFilter = new Button("upFileFilter", "Load File", "icon.png", 10, 20, 100, 400);
 
         guiLtse.setVisible(true);
     }
