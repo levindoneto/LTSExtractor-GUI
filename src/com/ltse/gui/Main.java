@@ -10,39 +10,53 @@ import javax.swing.ImageIcon;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 
+
+import javax.swing.*;
+
 public class Main extends JFrame {
-    private int height = 800;
-    private int width = 640;
-    public Main() throws UIException, ValueException {
-        // Settings
-        JFrame guiLtse = new JFrame();
-        ImageIcon img = new ImageIcon("../../../Resources/icon.png");
-        // Bar
-        JMenuBar bar = new JMenuBar();
-        // Menus
-        JMenu fileBar = new JMenu(UIUtils.getText("bar.file"));
+  private int height = 800;
+  private int width = 640;
+  public Main() throws UIException, ValueException {
+    // Settings
+    JFrame guiLtse = new JFrame();
+    guiLtse.setLayout(null);
+    ImageIcon img = new ImageIcon("../../../Resources/icon.png");
+    // Bar
+    JMenuBar bar = new JMenuBar();
+    // Menus
+    JMenu fileBar = new JMenu(UIUtils.getText("bar.file"));
 
-        fileBar.getAccessibleContext().setAccessibleDescription("File options of the LTS Extractor");
-        JMenu editBar = new JMenu(UIUtils.getText("bar.edit"));
-        JMenu helpBar = new JMenu(UIUtils.getText("bar.help"));
-        JMenu aboutBar = new JMenu(UIUtils.getText("bar.about"));
-        bar.add(fileBar);
-        bar.add(editBar);
-        bar.add(helpBar);
-        bar.add(aboutBar);
+    fileBar.getAccessibleContext().setAccessibleDescription("File options of the LTS Extractor");
+    JMenu editBar = new JMenu(UIUtils.getText("bar.edit"));
+    JMenu helpBar = new JMenu(UIUtils.getText("bar.help"));
+    JMenu aboutBar = new JMenu(UIUtils.getText("bar.about"));
+    bar.add(fileBar);
+    bar.add(editBar);
+    bar.add(helpBar);
+    bar.add(aboutBar);
 
-        guiLtse.setIconImage(img.getImage());
-        guiLtse.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        guiLtse.setTitle(UIUtils.getText("frame.title"));
-        guiLtse.setSize(width,height);
-        guiLtse.setResizable(false); // fixed size
-        guiLtse.setJMenuBar(bar);
+    guiLtse.setIconImage(img.getImage());
+    guiLtse.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    guiLtse.setTitle(UIUtils.getText("frame.title"));
+    guiLtse.setSize(width,height);
+    guiLtse.setResizable(false); // fixed size
+    guiLtse.setJMenuBar(bar);
 
-        Button upFileFilter = new Button("upFileFilter", "Load File", "icon.png", 10, 20, 100, 400);
+    //Button upFileFilter = new Button("upFileFilter", "Load File", "icon.png", 10, 20, 100, 400);
+    JButton button = new JButton("text");
+    JButton bu = new JButton("load");
 
-        guiLtse.setVisible(true);
+    //button.setBounds(10,10,100,50);
+    //bu.setBounds(10,10,200,50);
+
+
+    guiLtse.add(button);
+    guiLtse.add(bu);
+
+    guiLtse.setVisible(true);
+
     }
     public static void main(String[] args) throws UIException, ValueException {
-        Main appGui = new Main();
+      Main appGui = new Main();
     }
 }

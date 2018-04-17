@@ -7,22 +7,31 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class Button extends Component {
+  private String text;
+  private String icon;
 
-    public Button(String idComponent,
-                  String text,
-                  String icon,
-                  int positionX,
-                  int positionY,
-                  int height,
-                  int width
-    ) throws UIException, ValueException {
-        super(idComponent, "Button", text, icon, positionX, positionY, height, width);
-        JButton button = new JButton("Click here!");
-        JPanel panel = new JPanel();
-
-        // Add button to JPanel
-        panel.add(button);
-        //this.getContentPane().add(panel);
-    }
-
+  public Button(String idComponent,
+                String text,
+                String icon,
+                int positionX,
+                int positionY,
+                int height,
+                int width
+  ) throws UIException, ValueException {
+      if (text == null) {
+        throw new UIException(UIUtils.getText("exception.ui.invalidText"));
+      } else if (icon == null) {
+          throw new UIException(UIUtils.getText("exception.ui.invalidIcon"));
+      }
+      super(idComponent,
+        "Button",
+        text,
+        icon,
+        positionX,
+        positionY,
+        height,
+        width
+      );
+      JButton button = new JButton(text, icon);
+  }
 }

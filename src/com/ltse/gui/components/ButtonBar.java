@@ -5,13 +5,12 @@ import com.ltse.gui.exceptions.ValueException;
 
 public class ButtonBar extends Component {
 
-    public ButtonBar(String idComponent,
-                     int positionX,
-                     int positionY,
-                     int height,
-                     int width
-    ) throws UIException, ValueException {
-        super(idComponent, "ButtonBar", positionX, positionY, height, width);
-    }
+  public ButtonBar(String idComponent,
+                   int positionX,
+                   int positionY,
+                   int height,
+                   int width
+  ) throws UIException, ValueException {
+      super(idComponent, "ButtonBar", positionX, positionY, height, width);
+  }
 }
-
