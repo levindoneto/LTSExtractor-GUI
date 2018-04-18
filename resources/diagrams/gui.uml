@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.ltse.gui</OriginalElement>
+  <nodes>
+    <node x="731.125" y="390.5">com.ltse.gui.components.Label</node>
+    <node x="12.124999999999943" y="368.0">com.ltse.gui.components.Button</node>
+    <node x="421.62499999999994" y="89.0">com.ltse.gui.components.Component</node>
+    <node x="0.0" y="678.0">com.ltse.gui.domain</node>
+    <node x="970.125" y="390.5">com.ltse.gui.components.Panel</node>
+    <node x="239.12499999999994" y="390.5">com.ltse.gui.components.Bar</node>
+    <node x="467.12499999999994" y="390.5">com.ltse.gui.components.ButtonBar</node>
+    <node x="0.0" y="514.0">com.ltse.gui.Main</node>
+    <node x="15.919871794871767" y="0.0">com.ltse.gui.utils</node>
+    <node x="344.375" y="0.0">com.ltse.gui.exceptions</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.ltse.gui.components.Button" target="com.ltse.gui.components.Component">
+      <point x="69.0" y="-48.0" />
+      <point x="184.62499999999994" y="338.0" />
+      <point x="455.12499999999994" y="338.0" />
+      <point x="-134.0" y="114.5" />
+    </edge>
+    <edge source="com.ltse.gui.components.Component" target="com.ltse.gui.utils">
+      <point x="-83.75" y="-114.5" />
+      <point x="505.37499999999994" y="59.0" />
+      <point x="100.0865384615384" y="59.0" />
+      <point x="33.66666666666663" y="14.5" />
+    </edge>
+    <edge source="com.ltse.gui.components.Bar" target="com.ltse.gui.components.Component">
+      <point x="0.0" y="-25.5" />
+      <point x="343.12499999999994" y="348.0" />
+      <point x="522.125" y="348.0" />
+      <point x="-67.0" y="114.5" />
+    </edge>
+    <edge source="com.ltse.gui.components.Label" target="com.ltse.gui.components.Component">
+      <point x="0.0" y="-25.5" />
+      <point x="840.625" y="348.0" />
+      <point x="656.125" y="348.0" />
+      <point x="67.0" y="114.5" />
+    </edge>
+    <edge source="com.ltse.gui.components.Button" target="com.ltse.gui.utils">
+      <point x="-69.0" y="-48.0" />
+      <point x="46.62499999999994" y="348.0" />
+      <point x="55.08653846153851" y="348.0" />
+      <point x="55.08653846153851" y="69.0" />
+      <point x="66.41987179487177" y="69.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.ltse.gui.components.ButtonBar" target="com.ltse.gui.components.Component">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="com.ltse.gui.components.Button" target="com.ltse.gui.exceptions">
+      <point x="0.0" y="-48.0" />
+      <point x="115.62499999999994" y="348.0" />
+      <point x="130.41666666666657" y="348.0" />
+      <point x="130.41666666666657" y="69.0" />
+      <point x="378.125" y="69.0" />
+      <point x="-33.75" y="14.5" />
+    </edge>
+    <edge source="com.ltse.gui.Main" target="com.ltse.gui.components.Button">
+      <point x="56.333333333333314" y="-59.5" />
+      <point x="140.83333333333331" y="489.0" />
+      <point x="167.37499999999994" y="489.0" />
+      <point x="51.75" y="48.0" />
+    </edge>
+    <edge source="com.ltse.gui.components.Panel" target="com.ltse.gui.components.Component">
+      <point x="0.0" y="-25.5" />
+      <point x="1080.125" y="338.0" />
+      <point x="723.125" y="338.0" />
+      <point x="134.0" y="114.5" />
+    </edge>
+    <edge source="com.ltse.gui.Main" target="com.ltse.gui.utils">
+      <point x="-56.333333333333314" y="-59.5" />
+      <point x="28.166666666666686" y="489.0" />
+      <point x="1.6249999999999432" y="489.0" />
+      <point x="1.6249999999999432" y="69.0" />
+      <point x="32.75320512820514" y="69.0" />
+      <point x="-33.66666666666663" y="14.5" />
+    </edge>
+    <edge source="com.ltse.gui.components.Component" target="com.ltse.gui.exceptions">
+      <point x="83.75" y="-114.5" />
+      <point x="672.875" y="49.0" />
+      <point x="445.625" y="49.0" />
+      <point x="33.75" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8131101813110181" x="594.5" y="348.5" />
+  <SelectedNodes>
+    <node>com.ltse.gui.domain</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

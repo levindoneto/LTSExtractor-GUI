@@ -1,12 +1,18 @@
 # LTS Extractor GUI
 
-Graphical user interface for the LTS Extractor platform.
+Extension for the LTS Extractor platform which is used for enabling the communication with the methods 
+for generating model analysis, and to ease the management of log files throughout the platform.
 
 __Author:__ Levindo Gabriel Taschetto Neto.
 
+__Advisor:__ [Prof. Lucio Mauro Duarte](http://inf.ufrgs.br/~lmduarte/)
 ## Used technologies
 
-*  [JFrame](https://docs.oracle.com/javase/7/docs/api/javax/swing/JFrame.html).
+*  [Javax Swing](https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html).
+
+## Structure of the project
+
+![package_classes_diagram](resources/diagrams/package_classes_diagram.jpg)
 
 ## Java Specifications
 ```

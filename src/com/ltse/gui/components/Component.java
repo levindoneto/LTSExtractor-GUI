@@ -4,6 +4,8 @@ import com.ltse.gui.exceptions.UIException;
 import com.ltse.gui.exceptions.ValueException;
 import com.ltse.gui.utils.UIUtils;
 
+import javax.swing.*;
+
 public class Component {
   private String idComponent;
   private static String typeComponent; // It cannot change
@@ -18,7 +20,8 @@ public class Component {
           int positionX,
           int positionY,
           int height,
-          int width
+          int width,
+          JFrame frame
   ) throws UIException, ValueException {
       super();
       if (idComponent == null) {
@@ -98,4 +101,7 @@ public class Component {
     this.width = width;
   }
 
+  public void setToFrame(int width) {
+        this.width = width;
+    }
 }
