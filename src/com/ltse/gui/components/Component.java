@@ -7,12 +7,12 @@ import com.ltse.gui.utils.UIUtils;
 import javax.swing.*;
 
 public class Component {
-  private String idComponent;
-  private static String typeComponent; // It cannot change
-  private int positionX;
-  private int positionY;
-  private int height;
-  private int width;
+  String idComponent; // package-private
+  String typeComponent; // It cannot change
+  int positionX;
+  int positionY;
+  int height;
+  int width;
 
   public Component(
           String idComponent,
@@ -58,7 +58,11 @@ public class Component {
         }
     }
 
+    public Component(String idComponent, String panel, int positionX, int positionY, int height, int width) {
+    }
+
     public Component() {
+
     }
 
   public String getIdComponent () {
@@ -101,7 +105,8 @@ public class Component {
     this.width = width;
   }
 
-  public void setToFrame(int width) {
-        this.width = width;
+  public void setToFrame(JFrame frame, Component component) {
+      System.out.println(component.getIdComponent());
+      //frame.add(component);
     }
 }
