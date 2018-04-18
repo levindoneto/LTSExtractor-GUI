@@ -20,6 +20,7 @@ public class Component {
           int height,
           int width
   ) throws UIException, ValueException {
+      super();
       if (idComponent == null) {
         throw new UIException(
           UIUtils.getText("exception.ui.invalid" + typeComponent + "Id")
@@ -52,6 +53,9 @@ public class Component {
           this.height = height;
           this.width = width;
         }
+    }
+
+    public Component() {
     }
 
   public String getIdComponent () {

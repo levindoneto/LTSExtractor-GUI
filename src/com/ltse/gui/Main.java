@@ -43,14 +43,14 @@ public class Main extends JFrame {
     guiLtse.setJMenuBar(bar);
 
     //Button upFileFilter = new Button("upFileFilter", "Load File", "icon.png", 10, 20, 100, 400);
-    JButton button = new JButton("text");
+    Button button = new Button("text", "ok");
     JButton bu = new JButton("load");
 
     //button.setBounds(10,10,100,50);
     //bu.setBounds(10,10,200,50);
 
 
-    guiLtse.add(button);
+    //guiLtse.add(button);
     guiLtse.add(bu);
 
     guiLtse.setVisible(true);

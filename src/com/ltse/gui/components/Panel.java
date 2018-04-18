@@ -11,6 +11,6 @@ public class Panel extends  Component {
                int height,
                int width
   ) throws UIException, ValueException {
-      super(idComponent, "Panel", text, icon, positionX, positionY, height, width);
+      super(idComponent, "Panel", positionX, positionY, height, width);
   }
 }
