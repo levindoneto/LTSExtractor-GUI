@@ -3,30 +3,36 @@ package com.ltse.gui.components;
 import com.ltse.gui.exceptions.UIException;
 import com.ltse.gui.exceptions.ValueException;
 import com.ltse.gui.utils.UIUtils;
-import javax.swing.JButton;
+
+import javax.swing.*;
 
 public class Button extends Component {
   private String text;
-  private String icon;
+  //private Icon icon;
 
-  public Button(String text,
-                String icon
-  ) throws UIException, ValueException {
+  public Button(
+    String text,
+    String idComponent,
+    int positionX,
+    int positionY,
+    int height,
+    int width
+  ) throws UIException {
       super();
       if (text == null) {
         throw new UIException(UIUtils.getText("exception.ui.invalidText"));
-      } else if (icon == null) {
-          throw new UIException(UIUtils.getText("exception.ui.invalidIcon"));
       }
+      /* else if (icon == null) {
+          throw new UIException(UIUtils.getText("exception.ui.invalidIcon"));
+      }*/
       this.text = text;
-      this.icon = icon;
-      this.idComponent = "test";
+      //this.icon = icon;
+      this.idComponent = idComponent;
       this.typeComponent = "Button";
-      this.positionX = 10;
-      this.positionY = 10;
-      this.height = 10;
-      this.width = 10;
-
+	    this.positionX = positionX;
+		  this.positionY = positionY;
+		  this.height = height;
+		  this.width = width;
   }
 
     public String getText() {
@@ -37,11 +43,19 @@ public class Button extends Component {
         this.text = text;
     }
 
-    public String getIcon() {
-        return icon;
+    /*
+    public Icon getIcon() {
+      return icon;
     }
 
-    public void setIcon(String icon) {
-        this.icon = icon;
+    public void setIcon(Icon icon) {
+      this.icon = icon;
     }
+    */
+
+  public JButton getFrameComponent() {
+    //System.out.println(frame);
+    JButton jb = new JButton(getIdComponent());
+    return jb;
+  }
 }

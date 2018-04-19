@@ -13,15 +13,15 @@ public class Component {
   int positionY;
   int height;
   int width;
-
-  public Component(
-          String idComponent,
-          String typeComponent,
-          int positionX,
-          int positionY,
-          int height,
-          int width,
-          JFrame frame
+  JFrame frame;
+  Component(
+    String idComponent,
+    String typeComponent,
+    int positionX,
+    int positionY,
+    int height,
+    int width,
+    JFrame frame
   ) throws UIException, ValueException {
       super();
       if (idComponent == null) {
@@ -55,15 +55,11 @@ public class Component {
           this.positionY = positionY;
           this.height = height;
           this.width = width;
+          this.frame = frame;
         }
     }
 
-    public Component(String idComponent, String panel, int positionX, int positionY, int height, int width) {
-    }
-
-    public Component() {
-
-    }
+    Component() {}
 
   public String getIdComponent () {
     return this.idComponent;
@@ -105,8 +101,7 @@ public class Component {
     this.width = width;
   }
 
-  public void setToFrame(JFrame frame, Component component) {
-      System.out.println(component.getIdComponent());
-      //frame.add(component);
-    }
+  public JFrame getFrameComponent(JFrame frame) {
+    return this.frame;
+  }
 }

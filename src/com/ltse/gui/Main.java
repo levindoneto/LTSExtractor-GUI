@@ -1,6 +1,7 @@
 package com.ltse.gui;
 
 import com.ltse.gui.components.*;
+import com.ltse.gui.components.Button;
 import com.ltse.gui.exceptions.UIException;
 import com.ltse.gui.exceptions.ValueException;
 import com.ltse.gui.utils.UIUtils;
@@ -12,6 +13,8 @@ import javax.swing.JMenu;
 
 
 import javax.swing.*;
+import java.awt.*;
+import java.awt.Component;
 
 public class Main extends JFrame {
   private int height = 800;
@@ -42,20 +45,23 @@ public class Main extends JFrame {
     guiLtse.setResizable(false); // fixed size
     guiLtse.setJMenuBar(bar);
 
-    //Button upFileFilter = new Button("upFileFilter", "Load File", "icon.png", 10, 20, 100, 400);
-    Button button = new Button("text", "ok");
+    JButton u = new Button("text").getJButton();
 
-      JButton bu = new JButton("load");
 
-      button.setToFrame(guiLtse, button);
+
+    JButton bu = new JButton("load");
+
+
+
+    //button.setToFrame(guiLtse, button);
     //JButton bu = new JButton("load");
 
     //button.setBounds(10,10,100,50);
-    //bu.setBounds(10,10,200,50);
+    u.setBounds(10,10,200,50);
 
 
     //guiLtse.add(button);
-    //guiLtse.add(bu);
+    guiLtse.add(u);
 
     guiLtse.setVisible(true);
 
