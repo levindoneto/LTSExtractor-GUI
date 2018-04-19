@@ -1,3 +1,4 @@
+
 package com.ltse.gui;
 
 import com.ltse.gui.components.*;
@@ -45,23 +46,21 @@ public class Main extends JFrame {
     guiLtse.setResizable(false); // fixed size
     guiLtse.setJMenuBar(bar);
 
-    JButton u = new Button("text").getJButton();
+    JButton loadFileFilterBtn = new Button("Load File", "", 10,10,200,50).getFrameComponent();
+    JButton loadFileRefinementBtn = new Button("Load File", "loadFileRefinementBtn", 10,10,200,50).getFrameComponent();
+    JButton loadFileListOfLogsBtn = new Button("Load File", "loadFileListOfLogsBtn", 10,10,200,50).getFrameComponent();
+    JButton loadFileSpecificationBtn = new Button("Load File", "loadFileSpecificationBtn", 10,10,200,50).getFrameComponent();
 
+    //x, y, width, height
+    loadFileFilterBtn.setBounds       (80,175,150,50);
+    loadFileRefinementBtn.setBounds   (330,175,150,50);
+    loadFileListOfLogsBtn.setBounds   (80,400,150,50);
+    loadFileSpecificationBtn.setBounds(330,400,150,50);
 
-
-    JButton bu = new JButton("load");
-
-
-
-    //button.setToFrame(guiLtse, button);
-    //JButton bu = new JButton("load");
-
-    //button.setBounds(10,10,100,50);
-    u.setBounds(10,10,200,50);
-
-
-    //guiLtse.add(button);
-    guiLtse.add(u);
+    guiLtse.add(loadFileFilterBtn);
+    guiLtse.add(loadFileRefinementBtn);
+    guiLtse.add(loadFileListOfLogsBtn);
+    guiLtse.add(loadFileSpecificationBtn);
 
     guiLtse.setVisible(true);
 

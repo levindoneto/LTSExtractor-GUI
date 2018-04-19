@@ -55,7 +55,7 @@ public class Button extends Component {
 
   public JButton getFrameComponent() {
     //System.out.println(frame);
-    JButton jb = new JButton(getIdComponent());
+    JButton jb = new JButton(getText());
     return jb;
   }
 }
