@@ -1,10 +1,11 @@
 package com.ltse.gui.components;
 
 import com.ltse.gui.exceptions.UIException;
-import com.ltse.gui.exceptions.ValueException;
 import com.ltse.gui.utils.UIUtils;
+import static com.ltse.gui.resources.Constants.*;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Button extends Component {
   private String text;
@@ -61,6 +62,7 @@ public class Button extends Component {
 		  this.height,
 		  this.width
     );
+    jb.setBackground(Color.decode(COLOR_LOAD_BUTTON));
     return jb;
   }
 }
