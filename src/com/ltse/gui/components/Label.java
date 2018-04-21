@@ -10,6 +10,6 @@ public class Label extends Component {
                int height,
                int width
   ) throws UIException, ValueException {
-    super(idComponent, "Label", positionX, positionY, height, width);
+    super();
   }
 }

@@ -11,6 +11,6 @@ public class Bar extends Component {
              int height,
              int width
   ) throws UIException, ValueException {
-      super(idComponent, "Bar", positionX, positionY, height, width);
+      super();
   }
 }

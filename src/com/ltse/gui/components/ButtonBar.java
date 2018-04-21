@@ -11,6 +11,6 @@ public class ButtonBar extends Component {
                    int height,
                    int width
   ) throws UIException, ValueException {
-      super(idComponent, "ButtonBar", positionX, positionY, height, width);
+      super();
   }
 }
