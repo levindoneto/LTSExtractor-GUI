@@ -31,8 +31,8 @@ public class Button extends Component {
       this.typeComponent = "Button";
 	    this.positionX = positionX;
 		  this.positionY = positionY;
-		  this.height = height;
 		  this.width = width;
+		  this.height = height;
   }
 
     public String getText() {
@@ -54,8 +54,13 @@ public class Button extends Component {
     */
 
   public JButton getFrameComponent() {
-    //System.out.println(frame);
     JButton jb = new JButton(getText());
+    jb.setBounds(
+      this.positionX,
+      this.positionY,
+		  this.height,
+		  this.width
+    );
     return jb;
   }
 }
