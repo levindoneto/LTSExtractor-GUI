@@ -84,9 +84,15 @@ public class Main extends JFrame {
     guiLtse.add(loadFileSpecificationBtn);
 */
 
-		FilterPanel panelFilter = new FilterPanel(loadFileFilterBtn);
+		FilterPanel panelFilter = new FilterPanel();
+	  FilterPanel panelSpecification = new FilterPanel();
 
-	  guiLtse.setContentPane(panelFilter.getPanel());
+	  guiLtse.setContentPane(panelFilter.getPanel(10,10, loadFileFilterBtn));
+
+	  guiLtse.getContentPane().add(panelSpecification.getPanel(10,10, loadFileSpecificationBtn));
+
+	  //guiLtse.setContentPane(panelSpecification.getPanel(10,300));
+
 	  guiLtse.pack();
 
     // Frame's settings

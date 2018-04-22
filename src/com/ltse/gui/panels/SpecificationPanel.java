@@ -4,9 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import static com.ltse.gui.resources.Constants.*;
 
-/* Panel with a label "Filter" and with a button
+/* Panel with a label "Specification" and with a button
  * called "Load File"
  */
-public class FilterPanel extends Panel {
-	public FilterPanel() {}
+public class SpecificationPanel extends Panel {
+	public SpecificationPanel(){}
 }
