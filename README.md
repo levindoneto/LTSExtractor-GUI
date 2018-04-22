@@ -10,9 +10,14 @@ __Advisor:__ [Prof. Lucio Mauro Duarte](http://inf.ufrgs.br/~lmduarte/)
 
 *  [Javax Swing](https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html).
 
-## Structure of the project
+## Relationship between packages and the main class
 
-![package_classes_diagram](resources/diagrams/package_classes_diagram.jpg)
+![package_classes_diagram](resources/diagrams/main.png)
+
+## Relationship among the components
+
+![package_classes_diagram](resources/diagrams/components.png)
+
 
 ## Java Specifications
 ```
