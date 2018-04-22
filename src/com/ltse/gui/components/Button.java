@@ -4,6 +4,11 @@ import com.ltse.gui.exceptions.UIException;
 import com.ltse.gui.utils.UIUtils;
 import static com.ltse.gui.resources.Constants.*;
 
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 
@@ -16,8 +21,8 @@ public class Button extends Component {
     String idComponent,
     int positionX,
     int positionY,
-    int height,
-    int width
+    int width,
+    int height
   ) throws UIException {
       super();
       if (text == null) {
@@ -55,14 +60,17 @@ public class Button extends Component {
     */
 
   public JButton getFrameComponent() {
-    JButton jb = new JButton(getText());
-    jb.setBounds(
-      this.positionX,
-      this.positionY,
-		  this.height,
-		  this.width
-    );
-    jb.setBackground(Color.decode(COLOR_LOAD_BUTTON));
+    Icon buttonIcon = new ImageIcon("icon-upload-file-icon.png");
+	  JButton jb = new JButton(getText());
+	  jb.setBounds(
+			  this.positionX,
+			  this.positionY,
+			  this.width,
+			  this.height
+	  );
+	  jb.setBackground(Color.decode(COLOR_BACKGROUND_LOAD_BUTTON));
+	  jb.setForeground(Color.decode(COLOR_TEXT_LOAD_BUTTON));
+
     return jb;
   }
 }
