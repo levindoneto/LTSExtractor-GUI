@@ -83,14 +83,10 @@ public class Main extends JFrame {
     guiLtse.add(loadFileListOfLogsBtn);
     guiLtse.add(loadFileSpecificationBtn);
 */
-	  JPanel contentPane = new JPanel();
-	  contentPane.setLayout(new FlowLayout(FlowLayout.LEFT, 50, 150));
-	  contentPane.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));
 
 		FilterPanel panelFilter = new FilterPanel(loadFileFilterBtn);
 
-	  contentPane.add(panelFilter.getPanel());
-	  guiLtse.setContentPane(contentPane);
+	  guiLtse.setContentPane(panelFilter.getPanel());
 	  guiLtse.pack();
 
     // Frame's settings

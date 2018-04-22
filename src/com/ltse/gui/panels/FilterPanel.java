@@ -10,18 +10,23 @@ import static com.ltse.gui.resources.Constants.*;
  * called "Load File"
  */
 public class FilterPanel extends javax.swing.JPanel {
-	private static int height = HEIGHT_PANEL_FILTER;
-	private static int width = WIDTH_PANEL_FILTER;
 	private JButton button;
 	public FilterPanel(JButton loadFileFilterBtn) {
 		this.button = loadFileFilterBtn;
 	}
 
 	public JPanel getPanel() {
+		// Create content panel
+		JPanel contentPanel = new JPanel();
+		contentPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 10));
+		contentPanel.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, THICKNESS_BORDER_PANEL));
+
 		// Create panel
 		JPanel panel = new JPanel();
-		panel.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, THICKNESS_BORDER_PANEL));
+		panel.setBorder(BorderFactory.createLineBorder(Color.BLACK, THICKNESS_BORDER_PANEL));
 		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+
+		panel.setPreferredSize(new Dimension(WIDTH_PANEL_FILTER, HEIGHT_PANEL_FILTER));
 
 		// Create label
 		JPanel labelPanel = new JPanel();
@@ -35,7 +40,9 @@ public class FilterPanel extends javax.swing.JPanel {
 		panel.add(labelPanel);
 		panel.add(buttonLeftPanel);
 
-		return panel;
+		contentPanel.add(panel);
+
+		return contentPanel;
 	}
 
 	public JButton getPanelButton() {
