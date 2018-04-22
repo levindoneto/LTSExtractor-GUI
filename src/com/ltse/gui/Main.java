@@ -24,7 +24,7 @@ import java.awt.event.ActionListener;
 import static com.ltse.gui.resources.Constants.*;
 
 public class Main extends JFrame {
-	private JLabel positionLabel;
+	private JLabel positionLabel = new JLabel("No file has been loaded", JLabel.CENTER);
 	private JButton resetButton;
   public Main() throws UIException {
     // Settings
@@ -87,19 +87,9 @@ public class Main extends JFrame {
 	  contentPane.setLayout(new FlowLayout(FlowLayout.LEFT, 50, 150));
 	  contentPane.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));
 
-	  JPanel panelFilter = new JPanel();
-	  panelFilter.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));
-	  panelFilter.setLayout(new BoxLayout(panelFilter, BoxLayout.Y_AXIS));
-	  JPanel labelPanel = new JPanel();
-	  positionLabel = new JLabel("No file has been loaded", JLabel.CENTER);
-	  JPanel buttonLeftPanel = new JPanel();
-	  loadFileFilterBtn.addActionListener(ae -> positionLabel.setText("A file has been loaded"));
-	  labelPanel.add(positionLabel);
-	  buttonLeftPanel.add(loadFileFilterBtn);
-	  panelFilter.add(labelPanel);
-	  panelFilter.add(buttonLeftPanel);
+		FilterPanel panelFilter = new FilterPanel(loadFileFilterBtn);
 
-	  contentPane.add(panelFilter);
+	  contentPane.add(panelFilter.getPanel());
 	  guiLtse.setContentPane(contentPane);
 	  guiLtse.pack();
 

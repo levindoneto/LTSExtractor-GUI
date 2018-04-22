@@ -32,9 +32,23 @@ public final class Constants {
 	public static final int HEIGHT_MAIN_FRAME = 800;
 	public static final int WIDTH_MAIN_FRAME = 640;
 
+	// Panels
+	public static final int HEIGHT_PANEL_FILTER = 200;
+	public static final int WIDTH_PANEL_FILTER = 300;
+	public static final int HEIGHT_PANEL_REFINEMENT = 200;
+	public static final int WIDTH_PANEL_REFINEMENT = 300;
+	public static final int HEIGHT_PANEL_ACTION = 200;
+	public static final int WIDTH_PANEL_ACTION = 600;
+	public static final int HEIGHT_PANEL_LIST_LOGS = 200;
+	public static final int WIDTH_PANEL_LIST_LOGS = 300;
+	public static final int HEIGHT_PANEL_PANEL = 300;
+	public static final int WIDTH_PANEL_PANEL = 600;
+	public static final int THICKNESS_BORDER_PANEL = 1;
+
 	// Texts
 	public static final String TEXT_LOAD_FILE = "Load File";
 
 	// Files
 	public static final String ICON_LOAD_FILE = "icon-upload-file-icon.png";
+
 }
