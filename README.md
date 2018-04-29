@@ -12,11 +12,15 @@ __Advisor:__ [Prof. Lucio Mauro Duarte](http://inf.ufrgs.br/~lmduarte/)
 
 ## Relationship between packages and the main class
 
-![package_classes_diagram](resources/diagrams/main.png)
+![package_classes_diagram](resources/diagrams/package_src_diagram.jpg)
 
 ## Relationship among the components
 
-![package_classes_diagram](resources/diagrams/components.png)
+![package_classes_diagram](resources/diagrams/package_components_diagram.jpg)
+
+## Relationship among the panels
+
+![package_classes_diagram](resources/diagrams/package_panels_diagram.jpg)
 
 
 ## Java Specifications
