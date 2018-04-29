@@ -3,12 +3,11 @@ package com.ltse.gui;
 
 import com.ltse.gui.components.Button;
 import com.ltse.gui.exceptions.UIException;
-import com.ltse.gui.panels.FilterPanel;
+import com.ltse.gui.panels.*;
 import com.ltse.gui.utils.UIUtils;
+import static com.ltse.gui.resources.Constants.*;
 
 import javax.swing.*;
-
-import static com.ltse.gui.resources.Constants.*;
 
 public class Main extends JFrame {
 	private JLabel positionLabel = new JLabel("No file has been loaded", JLabel.CENTER);
@@ -66,9 +65,11 @@ public class Main extends JFrame {
     ).getFrameComponent();
 
 		FilterPanel panelFilter = new FilterPanel();
-	  FilterPanel panelRefinement = new FilterPanel();
-    FilterPanel panelListLogs = new FilterPanel();
-    FilterPanel panelSpecification = new FilterPanel();
+    RefinementPanel panelRefinement = new RefinementPanel();
+    ActionPanel panelAction = new ActionPanel();
+    ListLogsPanel panelListLogs = new ListLogsPanel();
+    SpecificationPanel panelSpecification = new SpecificationPanel();
+    InfoPanel panelInfo = new InfoPanel();
 
 
 	  guiLtse.setContentPane(panelFilter.getPanel(1,1, loadFileFilterBtn));
