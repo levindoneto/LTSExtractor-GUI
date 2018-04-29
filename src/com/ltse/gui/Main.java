@@ -71,12 +71,12 @@ public class Main extends JFrame {
     SpecificationPanel panelSpecification = new SpecificationPanel();
     InfoPanel panelInfo = new InfoPanel();
 
-
 	  guiLtse.setContentPane(panelFilter.getPanel(1,1, loadFileFilterBtn));
 	  guiLtse.getContentPane().add(panelRefinement.getPanel(0,0, loadFileRefinementBtn));
+    guiLtse.getContentPane().add(panelAction.getPanel(0,0));
     guiLtse.getContentPane().add(panelSpecification.getPanel(0,0, loadFileSpecificationBtn));
     guiLtse.getContentPane().add(panelListLogs.getPanel(-1,0, loadFileListOfLogsBtn));
-
+    guiLtse.getContentPane().add(panelInfo.getPanel(0,0));
 	  guiLtse.pack();
 
     // Frame's settings

@@ -41,4 +41,9 @@ public class Panel extends javax.swing.JPanel {
 		return contentPanel;
 	}
 
+	public JPanel getPanel(int x, int y) {
+		JPanel contentPanel = new JPanel();
+		return contentPanel;
+	}
 }
+
