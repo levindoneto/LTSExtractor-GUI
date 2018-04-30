@@ -3,9 +3,7 @@ package com.ltse.gui.panels;
 import javax.swing.*;
 import java.awt.*;
 
-import static com.ltse.gui.resources.Constants.WIDTH_PANEL_ACTION;
-import static com.ltse.gui.resources.Constants.HEIGHT_PANEL_ACTION;
-import static com.ltse.gui.resources.Constants.THICKNESS_BORDER_PANEL;
+import static com.ltse.gui.resources.Constants.*;
 
 /* Panel with a label "Action" and with 3 checkboxes:
  * Call Mode, Termination Mode and Enter/Exit Mode
@@ -14,7 +12,7 @@ public class ActionPanel extends Panel {
 	public ActionPanel() {}
 
 	@Override
-	public JPanel getPanel(int x, int y) {
+	public JPanel getPanel(int x, int y, String fixedLabel) {
 		System.out.println("ActionPanel");
 
 		JPanel contentPanel = new JPanel();
@@ -29,7 +27,11 @@ public class ActionPanel extends Panel {
 
 		panel.setPreferredSize(new Dimension(WIDTH_PANEL_ACTION, HEIGHT_PANEL_ACTION));
 
-		// Create label
+		// Fixed top label
+		JLabel myLabel = new JLabel(fixedLabel);
+		panel.add(myLabel);
+
+		// Create label for files' events
 		JPanel labelPanel = new JPanel();
 		JLabel positionLabel = new JLabel();
 

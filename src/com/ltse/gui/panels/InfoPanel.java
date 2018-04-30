@@ -3,9 +3,7 @@ package com.ltse.gui.panels;
 import javax.swing.*;
 import java.awt.*;
 
-import static com.ltse.gui.resources.Constants.HEIGHT_PANEL_INFO;
-import static com.ltse.gui.resources.Constants.THICKNESS_BORDER_PANEL;
-import static com.ltse.gui.resources.Constants.WIDTH_PANEL_INFO;
+import static com.ltse.gui.resources.Constants.*;
 
 /* Panel with a label "Panel" and with a text box
  * which communicates with the LTSE backend
@@ -14,7 +12,7 @@ public class InfoPanel extends Panel {
 	public InfoPanel() {}
 
 	@Override
-	public JPanel getPanel(int x, int y) {
+	public JPanel getPanel(int x, int y, String fixedLabel) {
 		System.out.println("InfoPanel");
 
 		JPanel contentPanel = new JPanel();
@@ -29,7 +27,11 @@ public class InfoPanel extends Panel {
 
 		panel.setPreferredSize(new Dimension(WIDTH_PANEL_INFO, HEIGHT_PANEL_INFO));
 
-		// Create label
+		// Fixed top label
+		JLabel myLabel = new JLabel(fixedLabel);
+		panel.add(myLabel);
+
+		// Create label for files' events
 		JPanel labelPanel = new JPanel();
 		JLabel positionLabel = new JLabel();
 

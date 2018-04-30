@@ -5,7 +5,7 @@ for generating model analysis, and to ease the management of log files throughou
 
 __Author:__ Levindo Gabriel Taschetto Neto.
 
-__Advisor:__ [Prof. Lucio Mauro Duarte](http://inf.ufrgs.br/~lmduarte/)
+__Advisor:__ [Prof. Lucio Mauro Duarte](http://inf.ufrgs.br/~lmduarte/).
 ## Used technologies
 
 *  [Javax Swing](https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html).
@@ -30,7 +30,7 @@ Java(TM) SE Runtime Environment (build 1.8.0_161-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
 ```
 
-## How to use
+## How to use it separately
 ```terminal
 $ cd src/
 $ javac com/ltse/gui/Main.java

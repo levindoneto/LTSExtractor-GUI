@@ -5,9 +5,10 @@ import com.ltse.gui.components.Button;
 import com.ltse.gui.exceptions.UIException;
 import com.ltse.gui.panels.*;
 import com.ltse.gui.utils.UIUtils;
-import static com.ltse.gui.resources.Constants.*;
 
 import javax.swing.*;
+
+import static com.ltse.gui.resources.Constants.*;
 
 public class Main extends JFrame {
 	private JLabel positionLabel = new JLabel("No file has been loaded", JLabel.CENTER);
@@ -71,12 +72,12 @@ public class Main extends JFrame {
     SpecificationPanel panelSpecification = new SpecificationPanel();
     InfoPanel panelInfo = new InfoPanel();
 
-	  guiLtse.setContentPane(panelFilter.getPanel(1,1, loadFileFilterBtn));
-	  guiLtse.getContentPane().add(panelRefinement.getPanel(0,0, loadFileRefinementBtn));
-    guiLtse.getContentPane().add(panelAction.getPanel(0,0));
-    guiLtse.getContentPane().add(panelSpecification.getPanel(0,0, loadFileSpecificationBtn));
-    guiLtse.getContentPane().add(panelListLogs.getPanel(-1,0, loadFileListOfLogsBtn));
-    guiLtse.getContentPane().add(panelInfo.getPanel(0,0));
+	  guiLtse.setContentPane(panelFilter.getPanel(1,1, loadFileFilterBtn, UIUtils.getText("label.filter")));
+	  guiLtse.getContentPane().add(panelRefinement.getPanel(0,0, loadFileRefinementBtn, UIUtils.getText("label.refinement")));
+    guiLtse.getContentPane().add(panelAction.getPanel(0,0, UIUtils.getText("label.actionMode")));
+    guiLtse.getContentPane().add(panelListLogs.getPanel(-1,0, loadFileListOfLogsBtn, UIUtils.getText("label.listOfLogs")));
+    guiLtse.getContentPane().add(panelSpecification.getPanel(0,0, loadFileSpecificationBtn, UIUtils.getText("label.specification")));
+    guiLtse.getContentPane().add(panelInfo.getPanel(0,0, UIUtils.getText("label.panel")));
 	  guiLtse.pack();
 
     // Frame's settings

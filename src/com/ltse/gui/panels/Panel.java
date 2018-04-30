@@ -2,6 +2,7 @@ package com.ltse.gui.panels;
 
 import javax.swing.*;
 import java.awt.*;
+
 import static com.ltse.gui.resources.Constants.*;
 
 /* Panel with a label "Filter" and with a button
@@ -10,7 +11,7 @@ import static com.ltse.gui.resources.Constants.*;
 public class Panel extends javax.swing.JPanel {
 	public Panel() {}
 
-	public JPanel getPanel(int x, int y, JButton buttonPanel) {
+	public JPanel getPanel(int x, int y, JButton buttonPanel, String fixedLabel) {
 		// Create content panel
 		JPanel contentPanel = new JPanel();
 		contentPanel.setLayout(new FlowLayout(FlowLayout.LEFT, x, y));
@@ -23,7 +24,11 @@ public class Panel extends javax.swing.JPanel {
 
 		panel.setPreferredSize(new Dimension(WIDTH_PANEL_FILTER, HEIGHT_PANEL_FILTER));
 
-		// Create label
+		// Fixed top label
+		JLabel myLabel = new JLabel(fixedLabel);
+		panel.add(myLabel);
+
+		// Create label for wjhen a file is loaded
 		JPanel labelPanel = new JPanel();
 		JPanel buttonLeftPanel = new JPanel();
 		JLabel positionLabel = new JLabel();
@@ -41,7 +46,7 @@ public class Panel extends javax.swing.JPanel {
 		return contentPanel;
 	}
 
-	public JPanel getPanel(int x, int y) {
+	public JPanel getPanel(int x, int y, String fixedLabel) {
 		JPanel contentPanel = new JPanel();
 		return contentPanel;
 	}
