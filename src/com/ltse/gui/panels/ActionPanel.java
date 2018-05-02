@@ -28,8 +28,11 @@ public class ActionPanel extends Panel {
 		panel.setPreferredSize(new Dimension(WIDTH_PANEL_ACTION, HEIGHT_PANEL_ACTION));
 
 		// Fixed top label
-		JLabel myLabel = new JLabel(fixedLabel);
-		panel.add(myLabel);
+		JLabel topLabel = new JLabel("<html><span style='font-size:" + FONT_LABEL + "'>" + fixedLabel + "</span></html>");
+		topLabel.setForeground(Color.decode(COLOR_TEXT_INNER_LABEL));
+		topLabel.setBackground(Color.decode(COLOR_INNER_LABEL));
+		topLabel.setOpaque(true);
+		panel.add(topLabel);
 
 		// Create label for files' events
 		JPanel labelPanel = new JPanel();

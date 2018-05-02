@@ -41,6 +41,10 @@ public final class Constants {
 	public static final int WIDTH_PANEL_INFO = 640;
 	public static final int THICKNESS_BORDER_PANEL = 1;
 
+	// Fonts (with unities)
+	public static final String FONT_LABEL = "16px";
+
+
 	// Files
 	public static final String ICON_LOAD_FILE = "icon-upload-file-icon.png";
 
