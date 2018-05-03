@@ -88,7 +88,7 @@ public class Main extends JFrame {
     guiLtse.getContentPane().add(toolBar, BorderLayout.NORTH);
     guiLtse.pack();
 
-
+    MainPanel mainPanel = new MainPanel();
     FilterPanel panelFilter = new FilterPanel();
     RefinementPanel panelRefinement = new RefinementPanel();
     ActionPanel panelAction = new ActionPanel();
