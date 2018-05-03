@@ -3,61 +3,61 @@
   <ID>JAVA</ID>
   <OriginalElement>com.ltse.gui.panels</OriginalElement>
   <nodes>
-    <node x="261.00000000000006" y="146.5">com.ltse.gui.panels.ListLogsPanel</node>
-    <node x="983.0" y="135.0">com.ltse.gui.panels.ActionPanel</node>
-    <node x="784.0" y="146.5">com.ltse.gui.panels.SpecificationPanel</node>
-    <node x="435.00000000000006" y="146.5">com.ltse.gui.panels.RefinementPanel</node>
-    <node x="487.75000000000006" y="0.0">com.ltse.gui.panels.Panel</node>
-    <node x="627.0" y="146.5">com.ltse.gui.panels.FilterPanel</node>
-    <node x="0.0" y="135.0">com.ltse.gui.panels.InfoPanel</node>
+    <node x="655.0" y="167.5">com.ltse.gui.panels.ListLogsPanel</node>
+    <node x="1017.0" y="167.5">com.ltse.gui.panels.SpecificationPanel</node>
+    <node x="250.0" y="156.0">com.ltse.gui.panels.ActionPanel</node>
+    <node x="827.0" y="167.5">com.ltse.gui.panels.RefinementPanel</node>
+    <node x="500.0" y="167.5">com.ltse.gui.panels.FilterPanel</node>
+    <node x="511.25" y="0.0">com.ltse.gui.panels.Panel</node>
+    <node x="0.0" y="156.0">com.ltse.gui.panels.InfoPanel</node>
   </nodes>
   <notes />
   <edges>
     <edge source="com.ltse.gui.panels.SpecificationPanel" target="com.ltse.gui.panels.Panel">
-      <point x="0.0" y="-26.0" />
-      <point x="873.5" y="105.0" />
-      <point x="668.5" y="105.0" />
-      <point x="60.25" y="37.5" />
+      <point x="0.0" y="-25.5" />
+      <point x="1105.5" y="116.0" />
+      <point x="764.25" y="116.0" />
+      <point x="115.0" y="48.0" />
     </edge>
     <edge source="com.ltse.gui.panels.RefinementPanel" target="com.ltse.gui.panels.Panel">
-      <point x="0.0" y="-26.0" />
-      <point x="521.0" y="115.0" />
-      <point x="588.1666666666667" y="115.0" />
-      <point x="-20.08333333333337" y="37.5" />
+      <point x="0.0" y="-25.5" />
+      <point x="912.0" y="126.0" />
+      <point x="718.25" y="126.0" />
+      <point x="69.0" y="48.0" />
     </edge>
     <edge source="com.ltse.gui.panels.ActionPanel" target="com.ltse.gui.panels.Panel">
-      <point x="0.0" y="-37.5" />
-      <point x="1103.5" y="95.0" />
-      <point x="708.6666666666667" y="95.0" />
-      <point x="100.41666666666663" y="37.5" />
+      <point x="0.0" y="-37.0" />
+      <point x="365.0" y="126.0" />
+      <point x="580.25" y="126.0" />
+      <point x="-69.0" y="48.0" />
     </edge>
     <edge source="com.ltse.gui.panels.InfoPanel" target="com.ltse.gui.panels.Panel">
-      <point x="0.0" y="-37.5" />
-      <point x="120.5" y="95.0" />
-      <point x="507.8333333333334" y="95.0" />
-      <point x="-100.41666666666663" y="37.5" />
+      <point x="0.0" y="-37.0" />
+      <point x="115.0" y="116.0" />
+      <point x="534.25" y="116.0" />
+      <point x="-115.0" y="48.0" />
     </edge>
     <edge source="com.ltse.gui.panels.FilterPanel" target="com.ltse.gui.panels.Panel">
-      <point x="0.0" y="-26.0" />
-      <point x="695.5" y="115.0" />
-      <point x="628.3333333333335" y="115.0" />
-      <point x="20.08333333333337" y="37.5" />
+      <point x="0.0" y="-25.5" />
+      <point x="567.5" y="136.0" />
+      <point x="626.25" y="136.0" />
+      <point x="-23.0" y="48.0" />
     </edge>
     <edge source="com.ltse.gui.panels.ListLogsPanel" target="com.ltse.gui.panels.Panel">
-      <point x="0.0" y="-26.0" />
-      <point x="338.00000000000006" y="105.0" />
-      <point x="548.0" y="105.0" />
-      <point x="-60.25" y="37.5" />
+      <point x="0.0" y="-25.5" />
+      <point x="731.0" y="136.0" />
+      <point x="672.25" y="136.0" />
+      <point x="23.0" y="48.0" />
     </edge>
   </edges>
   <settings layout="Hierarchic Group" zoom="1.0" x="612.0" y="105.0" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
-    <Category>Methods</Category>
     <Category>Constructors</Category>
     <Category>Properties</Category>
     <Category>Inner Classes</Category>
+    <Category>Methods</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
