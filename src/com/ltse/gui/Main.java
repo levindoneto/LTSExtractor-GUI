@@ -25,6 +25,8 @@ public class Main extends JFrame {
     guiLtse.setTitle(UIUtils.getText("frame.title"));
     guiLtse.setIconImage(img.getImage());
     guiLtse.setLocationRelativeTo(null);
+    guiLtse.setResizable(false); // fixed size
+
     final JToolBar toolBar = new JToolBar();
 
     // Main frame's buttons
@@ -96,8 +98,10 @@ public class Main extends JFrame {
     SpecificationPanel panelSpecification = new SpecificationPanel();
     InfoPanel panelInfo = new InfoPanel();
 
+    /*
     guiLtse.getContentPane().add(panelFilter.getPanel(0,0, loadFileFilterBtn, UIUtils.getText("label.filter")));
     guiLtse.pack();
+    guiLtse.getContentPane().add(panelRefinement.getPanel(310,0, loadFileRefinementBtn, UIUtils.getText("label.refinement")));
     guiLtse.getContentPane().add(panelRefinement.getPanel(310,0, loadFileRefinementBtn, UIUtils.getText("label.refinement")));
     guiLtse.pack();
     guiLtse.getContentPane().add(panelAction.getPanel(250,0, UIUtils.getText("label.actionMode")));
@@ -108,6 +112,7 @@ public class Main extends JFrame {
     guiLtse.pack();
     guiLtse.getContentPane().add(panelInfo.getPanel(400,310, UIUtils.getText("label.panel")));
     guiLtse.pack();
+    */
 
     guiLtse.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     guiLtse.setLocationRelativeTo(null);
