@@ -19,5 +19,12 @@ public class MainPanel extends javax.swing.JPanel {
         JPanel contentPanel = new JPanel();
         return contentPanel;
     }
+
+    // Main container of the frame
+    public JPanel getMainPanel(int x, int y) {
+        JPanel contentPanel = new JPanel();
+        contentPanel.setLayout(new FlowLayout());
+        return contentPanel;
+    }
 }
 

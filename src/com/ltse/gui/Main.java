@@ -98,6 +98,9 @@ public class Main extends JFrame {
     SpecificationPanel panelSpecification = new SpecificationPanel();
     InfoPanel panelInfo = new InfoPanel();
 
+    guiLtse.getContentPane().add(toolBar, BorderLayout.NORTH);
+    guiLtse.pack();
+
     /*
     guiLtse.getContentPane().add(panelFilter.getPanel(0,0, loadFileFilterBtn, UIUtils.getText("label.filter")));
     guiLtse.pack();
@@ -113,6 +116,9 @@ public class Main extends JFrame {
     guiLtse.getContentPane().add(panelInfo.getPanel(400,310, UIUtils.getText("label.panel")));
     guiLtse.pack();
     */
+    guiLtse.getContentPane().add(panelFilter.getPanel(0,0, loadFileFilterBtn, UIUtils.getText("label.filter")),
+        BorderLayout.SOUTH);
+    guiLtse.pack();
 
     guiLtse.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     guiLtse.setLocationRelativeTo(null);
