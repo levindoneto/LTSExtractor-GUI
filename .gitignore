@@ -2,3 +2,5 @@
 .idea/*
 org/
 out/
+/ltseGui/build/
+/ltseGui/nbproject/private/
