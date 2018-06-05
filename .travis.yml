@@ -7,6 +7,6 @@ addons:
   apt:
     packages:
       - oracle-java8-installer
-before_script: cd src/
+before_script: cd ltseGui/src/
 script:
-  - javac com/ltse/gui/Main.java
+  - javac Main.java
