@@ -8,8 +8,9 @@
 *** Checkboxes’ background: #607D8B (BLUE_GREY500)
 *** Labels of the Checkboxes’ background: #90A4AE (BLUE_GREY300)
 *** Texts of the Checkboxes’ background: #000000 (Black)
-*** Load file button: #263238 (BLUE_GREY900)
+*** Load file button: #EEEEEE (GREY200)
 
+Layout: absolute
 
 * Sizes:
 ** Window: Fixed (L:?, W:?)
