@@ -9,6 +9,8 @@ public class Main {
      */
     public static void main(String[] args) {
         MainPanel a = new MainPanel();
+        a.setTitle("LTS Extractor");
+        a.setResizable(false); // fixed size
         a.setVisible(true);
     }
     
