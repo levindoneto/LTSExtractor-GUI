@@ -28,30 +28,30 @@ public class MainPanel extends javax.swing.JFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        panelTextArea = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
+        specificationButton = new javax.swing.JButton();
+        filterLabel = new javax.swing.JLabel();
+        specificationLabel = new javax.swing.JLabel();
+        refinementLabel = new javax.swing.JLabel();
+        panelLabel = new javax.swing.JLabel();
+        listOfLogsLabel = new javax.swing.JLabel();
+        filterButton = new javax.swing.JButton();
+        listOfLogsButton = new javax.swing.JButton();
+        actionLabel = new javax.swing.JLabel();
+        refinementButton = new javax.swing.JButton();
+        toolbar = new javax.swing.JMenuBar();
+        fileToolbarButton = new javax.swing.JMenu();
+        editToolbarButton = new javax.swing.JMenu();
+        helpToolbarButton = new javax.swing.JMenu();
+        aboutToolbarButton = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane2.setViewportView(jTextArea1);
+        panelTextArea.setColumns(20);
+        panelTextArea.setRows(5);
+        jScrollPane2.setViewportView(panelTextArea);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 620, 300));
 
@@ -68,126 +68,135 @@ public class MainPanel extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 163, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(176, 190, 197));
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton3.setText("Upload File");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        specificationButton.setBackground(new java.awt.Color(176, 190, 197));
+        specificationButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        specificationButton.setText("Upload File");
+        specificationButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                specificationButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, 173, -1));
+        getContentPane().add(specificationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, 173, -1));
 
-        jLabel6.setBackground(new java.awt.Color(55, 71, 79));
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Filter");
-        jLabel6.setOpaque(true);
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 32));
+        filterLabel.setBackground(new java.awt.Color(55, 71, 79));
+        filterLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        filterLabel.setForeground(new java.awt.Color(255, 255, 255));
+        filterLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        filterLabel.setText("Filter");
+        filterLabel.setOpaque(true);
+        getContentPane().add(filterLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 32));
 
-        jLabel7.setBackground(new java.awt.Color(55, 71, 79));
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Specification");
-        jLabel7.setOpaque(true);
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 310, 32));
+        specificationLabel.setBackground(new java.awt.Color(55, 71, 79));
+        specificationLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        specificationLabel.setForeground(new java.awt.Color(255, 255, 255));
+        specificationLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        specificationLabel.setText("Specification");
+        specificationLabel.setOpaque(true);
+        getContentPane().add(specificationLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 310, 32));
 
-        jLabel9.setBackground(new java.awt.Color(55, 71, 79));
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("                                                   Refinement");
-        jLabel9.setOpaque(true);
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 621, 32));
+        refinementLabel.setBackground(new java.awt.Color(55, 71, 79));
+        refinementLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        refinementLabel.setForeground(new java.awt.Color(255, 255, 255));
+        refinementLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        refinementLabel.setText("                                                   Refinement");
+        refinementLabel.setOpaque(true);
+        getContentPane().add(refinementLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 621, 32));
 
-        jLabel10.setBackground(new java.awt.Color(55, 71, 79));
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Panel");
-        jLabel10.setOpaque(true);
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 621, 32));
+        panelLabel.setBackground(new java.awt.Color(55, 71, 79));
+        panelLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        panelLabel.setForeground(new java.awt.Color(255, 255, 255));
+        panelLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        panelLabel.setText("Panel");
+        panelLabel.setOpaque(true);
+        getContentPane().add(panelLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 621, 32));
 
-        jLabel11.setBackground(new java.awt.Color(55, 71, 79));
-        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("List of Logs");
-        jLabel11.setOpaque(true);
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 310, 32));
+        listOfLogsLabel.setBackground(new java.awt.Color(55, 71, 79));
+        listOfLogsLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        listOfLogsLabel.setForeground(new java.awt.Color(255, 255, 255));
+        listOfLogsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        listOfLogsLabel.setText("List of Logs");
+        listOfLogsLabel.setOpaque(true);
+        getContentPane().add(listOfLogsLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 310, 32));
 
-        jButton5.setBackground(new java.awt.Color(176, 190, 197));
-        jButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton5.setText("Upload File");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+        filterButton.setBackground(new java.awt.Color(176, 190, 197));
+        filterButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        filterButton.setText("Upload File");
+        filterButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                filterButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 173, -1));
-
-        jButton6.setBackground(new java.awt.Color(176, 190, 197));
-        jButton6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton6.setText("Upload File");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        filterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                filterButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 173, -1));
+        getContentPane().add(filterButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 173, -1));
 
-        jLabel12.setBackground(new java.awt.Color(55, 71, 79));
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("Action");
-        jLabel12.setOpaque(true);
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 621, 32));
-
-        jButton7.setBackground(new java.awt.Color(176, 190, 197));
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton7.setText("Upload File");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        listOfLogsButton.setBackground(new java.awt.Color(176, 190, 197));
+        listOfLogsButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        listOfLogsButton.setText("Upload File");
+        listOfLogsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                listOfLogsButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 173, -1));
+        getContentPane().add(listOfLogsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 173, -1));
 
-        jMenu1.setText("File");
-        jMenuBar1.add(jMenu1);
+        actionLabel.setBackground(new java.awt.Color(55, 71, 79));
+        actionLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        actionLabel.setForeground(new java.awt.Color(255, 255, 255));
+        actionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        actionLabel.setText("Action");
+        actionLabel.setOpaque(true);
+        getContentPane().add(actionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 621, 32));
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        refinementButton.setBackground(new java.awt.Color(176, 190, 197));
+        refinementButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        refinementButton.setText("Upload File");
+        refinementButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                refinementButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(refinementButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 173, -1));
 
-        jMenu3.setText("Help");
-        jMenuBar1.add(jMenu3);
+        fileToolbarButton.setText("File");
+        toolbar.add(fileToolbarButton);
 
-        jMenu4.setText("About");
-        jMenuBar1.add(jMenu4);
+        editToolbarButton.setText("Edit");
+        toolbar.add(editToolbarButton);
 
-        setJMenuBar(jMenuBar1);
+        helpToolbarButton.setText("Help");
+        toolbar.add(helpToolbarButton);
+
+        aboutToolbarButton.setText("About");
+        toolbar.add(aboutToolbarButton);
+
+        setJMenuBar(toolbar);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void specificationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_specificationButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_specificationButtonActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void filterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filterButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_filterButtonActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void listOfLogsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listOfLogsButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_listOfLogsButtonActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void refinementButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refinementButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_refinementButtonActionPerformed
+
+    private void filterButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filterButtonMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_filterButtonMouseClicked
 
     /**
      * @param args the command line arguments
@@ -220,24 +229,24 @@ public class MainPanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu aboutToolbarButton;
+    private javax.swing.JLabel actionLabel;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu editToolbarButton;
+    private javax.swing.JMenu fileToolbarButton;
+    private javax.swing.JButton filterButton;
+    private javax.swing.JLabel filterLabel;
+    private javax.swing.JMenu helpToolbarButton;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JButton listOfLogsButton;
+    private javax.swing.JLabel listOfLogsLabel;
+    private javax.swing.JLabel panelLabel;
+    private javax.swing.JTextArea panelTextArea;
+    private javax.swing.JButton refinementButton;
+    private javax.swing.JLabel refinementLabel;
+    private javax.swing.JButton specificationButton;
+    private javax.swing.JLabel specificationLabel;
+    private javax.swing.JMenuBar toolbar;
     // End of variables declaration//GEN-END:variables
 }
