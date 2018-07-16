@@ -180,7 +180,9 @@ public class MainPanel extends javax.swing.JFrame {
         });
         getContentPane().add(refinementButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 173, -1));
 
+        buttonGroup1.add(callModeActionButton);
         callModeActionButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        callModeActionButton.setSelected(false);
         callModeActionButton.setText("Call Mode");
         callModeActionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -189,6 +191,7 @@ public class MainPanel extends javax.swing.JFrame {
         });
         getContentPane().add(callModeActionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
 
+        buttonGroup1.add(terminationModeActionButton);
         terminationModeActionButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         terminationModeActionButton.setText("Termination Mode");
         terminationModeActionButton.addActionListener(new java.awt.event.ActionListener() {
@@ -198,6 +201,7 @@ public class MainPanel extends javax.swing.JFrame {
         });
         getContentPane().add(terminationModeActionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, -1, -1));
 
+        buttonGroup1.add(enterModeActionButton);
         enterModeActionButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         enterModeActionButton.setText("Enter Mode");
         getContentPane().add(enterModeActionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, -1, -1));
@@ -207,15 +211,12 @@ public class MainPanel extends javax.swing.JFrame {
         toolbar.add(fileToolbarButton);
 
         editToolbarButton.setText("Edit");
-        editToolbarButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         toolbar.add(editToolbarButton);
 
         helpToolbarButton.setText("Help");
-        helpToolbarButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         toolbar.add(helpToolbarButton);
 
         aboutToolbarButton.setText("About");
-        aboutToolbarButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         toolbar.add(aboutToolbarButton);
 
         setJMenuBar(toolbar);
