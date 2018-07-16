@@ -20,9 +20,13 @@ __Advisor:__ [Prof. Lucio Mauro Duarte](http://inf.ufrgs.br/~lmduarte/).
 
 ## Relationship among the panels
 
-![package_classes_diagram](resources/diagrams/package_panels_diagram.jpg)
+## The GUI
 
+Partial version of the LTSE Gui v1.0 can be seen in the image below.
 
+![ltse_gui](resources/img/ltse-gui-v1.0.jpg)
+
+ltse-gui-v1.0
 ## Java Specifications
 ```
 java version "1.8.0_161"
@@ -32,7 +36,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
 
 ## How to use it separately
 ```terminal
-$ cd src/
-$ javac com/ltse/gui/Main.java
-$ java com/ltse/gui/Main
+$ cd ltseGui/src
+$ javac Main.java
+$ java Main
 ```
