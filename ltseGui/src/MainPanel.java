@@ -20,6 +20,12 @@ public class MainPanel extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
+        buttonGroup3 = new javax.swing.ButtonGroup();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        buttonGroup4 = new javax.swing.ButtonGroup();
+        buttonGroup5 = new javax.swing.ButtonGroup();
+        buttonGroup6 = new javax.swing.ButtonGroup();
         jScrollPane2 = new javax.swing.JScrollPane();
         panelTextArea = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
@@ -33,11 +39,16 @@ public class MainPanel extends javax.swing.JFrame {
         listOfLogsButton = new javax.swing.JButton();
         actionLabel = new javax.swing.JLabel();
         refinementButton = new javax.swing.JButton();
+        callModeActionButton = new javax.swing.JRadioButton();
+        terminationModeActionButton = new javax.swing.JRadioButton();
+        enterModeActionButton = new javax.swing.JRadioButton();
         toolbar = new javax.swing.JMenuBar();
         fileToolbarButton = new javax.swing.JMenu();
         editToolbarButton = new javax.swing.JMenu();
         helpToolbarButton = new javax.swing.JMenu();
         aboutToolbarButton = new javax.swing.JMenu();
+
+        jRadioButton1.setText("jRadioButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -46,7 +57,7 @@ public class MainPanel extends javax.swing.JFrame {
         panelTextArea.setRows(5);
         jScrollPane2.setViewportView(panelTextArea);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 620, 300));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 620, 300));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -62,7 +73,7 @@ public class MainPanel extends javax.swing.JFrame {
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 163, -1, -1));
 
         specificationButton.setBackground(new java.awt.Color(176, 190, 197));
-        specificationButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        specificationButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         specificationButton.setText("Upload File");
         specificationButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -74,10 +85,10 @@ public class MainPanel extends javax.swing.JFrame {
                 specificationButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(specificationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, 173, -1));
+        getContentPane().add(specificationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, 173, -1));
 
         filterLabel.setBackground(new java.awt.Color(55, 71, 79));
-        filterLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        filterLabel.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         filterLabel.setForeground(new java.awt.Color(255, 255, 255));
         filterLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         filterLabel.setText("Filter");
@@ -85,15 +96,15 @@ public class MainPanel extends javax.swing.JFrame {
         getContentPane().add(filterLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 310, 32));
 
         specificationLabel.setBackground(new java.awt.Color(55, 71, 79));
-        specificationLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        specificationLabel.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         specificationLabel.setForeground(new java.awt.Color(255, 255, 255));
         specificationLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         specificationLabel.setText("Specification");
         specificationLabel.setOpaque(true);
-        getContentPane().add(specificationLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, 310, 32));
+        getContentPane().add(specificationLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 190, 310, 32));
 
         refinementLabel.setBackground(new java.awt.Color(55, 71, 79));
-        refinementLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        refinementLabel.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         refinementLabel.setForeground(new java.awt.Color(255, 255, 255));
         refinementLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         refinementLabel.setText("                                                   Refinement");
@@ -101,23 +112,23 @@ public class MainPanel extends javax.swing.JFrame {
         getContentPane().add(refinementLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 621, 32));
 
         panelLabel.setBackground(new java.awt.Color(55, 71, 79));
-        panelLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        panelLabel.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         panelLabel.setForeground(new java.awt.Color(255, 255, 255));
         panelLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         panelLabel.setText("Panel");
         panelLabel.setOpaque(true);
-        getContentPane().add(panelLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 620, 32));
+        getContentPane().add(panelLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 620, 32));
 
         listOfLogsLabel.setBackground(new java.awt.Color(55, 71, 79));
-        listOfLogsLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        listOfLogsLabel.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         listOfLogsLabel.setForeground(new java.awt.Color(255, 255, 255));
         listOfLogsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         listOfLogsLabel.setText("List of Logs");
         listOfLogsLabel.setOpaque(true);
-        getContentPane().add(listOfLogsLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 310, 32));
+        getContentPane().add(listOfLogsLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 310, 32));
 
         filterButton.setBackground(new java.awt.Color(176, 190, 197));
-        filterButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        filterButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         filterButton.setText("Upload File");
         filterButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -132,7 +143,7 @@ public class MainPanel extends javax.swing.JFrame {
         getContentPane().add(filterButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 173, -1));
 
         listOfLogsButton.setBackground(new java.awt.Color(176, 190, 197));
-        listOfLogsButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        listOfLogsButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         listOfLogsButton.setText("Upload File");
         listOfLogsButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -144,10 +155,10 @@ public class MainPanel extends javax.swing.JFrame {
                 listOfLogsButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(listOfLogsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 270, 173, -1));
+        getContentPane().add(listOfLogsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, 173, -1));
 
         actionLabel.setBackground(new java.awt.Color(55, 71, 79));
-        actionLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        actionLabel.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         actionLabel.setForeground(new java.awt.Color(255, 255, 255));
         actionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         actionLabel.setText("Action");
@@ -155,7 +166,7 @@ public class MainPanel extends javax.swing.JFrame {
         getContentPane().add(actionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 621, 32));
 
         refinementButton.setBackground(new java.awt.Color(176, 190, 197));
-        refinementButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        refinementButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         refinementButton.setText("Upload File");
         refinementButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -169,16 +180,42 @@ public class MainPanel extends javax.swing.JFrame {
         });
         getContentPane().add(refinementButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 173, -1));
 
+        callModeActionButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        callModeActionButton.setText("Call Mode");
+        callModeActionButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                callModeActionButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(callModeActionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
+
+        terminationModeActionButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        terminationModeActionButton.setText("Termination Mode");
+        terminationModeActionButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                terminationModeActionButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(terminationModeActionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, -1, -1));
+
+        enterModeActionButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        enterModeActionButton.setText("Enter Mode");
+        getContentPane().add(enterModeActionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, -1, -1));
+
         fileToolbarButton.setText("File");
+        fileToolbarButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         toolbar.add(fileToolbarButton);
 
         editToolbarButton.setText("Edit");
+        editToolbarButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         toolbar.add(editToolbarButton);
 
         helpToolbarButton.setText("Help");
+        helpToolbarButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         toolbar.add(helpToolbarButton);
 
         aboutToolbarButton.setText("About");
+        aboutToolbarButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         toolbar.add(aboutToolbarButton);
 
         setJMenuBar(toolbar);
@@ -217,6 +254,14 @@ public class MainPanel extends javax.swing.JFrame {
     private void specificationButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_specificationButtonMouseClicked
         File specificationFile = getFileFromUser();
     }//GEN-LAST:event_specificationButtonMouseClicked
+
+    private void callModeActionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callModeActionButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_callModeActionButtonActionPerformed
+
+    private void terminationModeActionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_terminationModeActionButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_terminationModeActionButtonActionPerformed
 
     private File getFileFromUser() {                                          
         JFileChooser fileChooser = new JFileChooser();
@@ -265,12 +310,20 @@ public class MainPanel extends javax.swing.JFrame {
     private javax.swing.JMenu aboutToolbarButton;
     private javax.swing.JLabel actionLabel;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.ButtonGroup buttonGroup3;
+    private javax.swing.ButtonGroup buttonGroup4;
+    private javax.swing.ButtonGroup buttonGroup5;
+    private javax.swing.ButtonGroup buttonGroup6;
+    private javax.swing.JRadioButton callModeActionButton;
     private javax.swing.JMenu editToolbarButton;
+    private javax.swing.JRadioButton enterModeActionButton;
     private javax.swing.JMenu fileToolbarButton;
     private javax.swing.JButton filterButton;
     private javax.swing.JLabel filterLabel;
     private javax.swing.JMenu helpToolbarButton;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton listOfLogsButton;
     private javax.swing.JLabel listOfLogsLabel;
@@ -280,6 +333,7 @@ public class MainPanel extends javax.swing.JFrame {
     private javax.swing.JLabel refinementLabel;
     private javax.swing.JButton specificationButton;
     private javax.swing.JLabel specificationLabel;
+    private javax.swing.JRadioButton terminationModeActionButton;
     private javax.swing.JMenuBar toolbar;
     // End of variables declaration//GEN-END:variables
 }

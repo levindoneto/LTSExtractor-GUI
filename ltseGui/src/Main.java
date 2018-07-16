@@ -3,14 +3,13 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
 import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
 
 /**
- *
  * @author lgtneto
+ * @company VeriTeS UFRGS
+ * @version 1.0
  */
 public class Main {
-
     /**
      * @param args the command line arguments
      * @throws java.io.IOException
@@ -27,6 +26,5 @@ public class Main {
         ltseGui.setTitle("LTS Extractor");
         ltseGui.setResizable(false); // fixed size
         ltseGui.setVisible(true);
-    }
-    
+    }   
 }
