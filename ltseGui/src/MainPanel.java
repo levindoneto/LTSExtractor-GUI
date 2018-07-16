@@ -75,6 +75,7 @@ public class MainPanel extends javax.swing.JFrame {
         specificationButton.setBackground(new java.awt.Color(176, 190, 197));
         specificationButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         specificationButton.setText("Upload File");
+        specificationButton.setToolTipText("Specification to be included in the model file in one of the formats allowed by the LTSA tool");
         specificationButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 specificationButtonMouseClicked(evt);
@@ -116,6 +117,7 @@ public class MainPanel extends javax.swing.JFrame {
         panelLabel.setForeground(new java.awt.Color(255, 255, 255));
         panelLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         panelLabel.setText("Panel");
+        panelLabel.setToolTipText("Panel with the output given by the LTSE tool");
         panelLabel.setOpaque(true);
         getContentPane().add(panelLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 620, 32));
 
@@ -130,6 +132,7 @@ public class MainPanel extends javax.swing.JFrame {
         filterButton.setBackground(new java.awt.Color(176, 190, 197));
         filterButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         filterButton.setText("Upload File");
+        filterButton.setToolTipText("Name of \".flt\" file containing the names of actions to be included in the model");
         filterButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 filterButtonMouseClicked(evt);
@@ -145,6 +148,7 @@ public class MainPanel extends javax.swing.JFrame {
         listOfLogsButton.setBackground(new java.awt.Color(176, 190, 197));
         listOfLogsButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         listOfLogsButton.setText("Upload File");
+        listOfLogsButton.setToolTipText("List of names of \".log\" files containing each one execution trace with context information");
         listOfLogsButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 listOfLogsButtonMouseClicked(evt);
@@ -162,12 +166,14 @@ public class MainPanel extends javax.swing.JFrame {
         actionLabel.setForeground(new java.awt.Color(255, 255, 255));
         actionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         actionLabel.setText("Action");
+        actionLabel.setToolTipText(" Determines how actions related to method calls/execution are represented and interpreted");
         actionLabel.setOpaque(true);
         getContentPane().add(actionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 621, 32));
 
         refinementButton.setBackground(new java.awt.Color(176, 190, 197));
         refinementButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         refinementButton.setText("Upload File");
+        refinementButton.setToolTipText("Name of \".ref\" file containing the names of attributes to be included in context information");
         refinementButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 refinementButtonMouseClicked(evt);
@@ -184,6 +190,7 @@ public class MainPanel extends javax.swing.JFrame {
         callModeActionButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         callModeActionButton.setSelected(false);
         callModeActionButton.setText("Call Mode");
+        callModeActionButton.setToolTipText("Action name \"m\" represents the call of the corresponding method m");
         callModeActionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 callModeActionButtonActionPerformed(evt);
@@ -194,6 +201,7 @@ public class MainPanel extends javax.swing.JFrame {
         buttonGroup1.add(terminationModeActionButton);
         terminationModeActionButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         terminationModeActionButton.setText("Termination Mode");
+        terminationModeActionButton.setToolTipText("Action name \"m\" represents the termination of the corresponding method m");
         terminationModeActionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 terminationModeActionButtonActionPerformed(evt);
@@ -204,19 +212,24 @@ public class MainPanel extends javax.swing.JFrame {
         buttonGroup1.add(enterModeActionButton);
         enterModeActionButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         enterModeActionButton.setText("Enter Mode");
+        enterModeActionButton.setToolTipText("action name \"m.enter\" represents the beginning of the execution of corresponding method m, whereas \"m.exit\" represents the end of the execution");
         getContentPane().add(enterModeActionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, -1, -1));
 
         fileToolbarButton.setText("File");
+        fileToolbarButton.setToolTipText("File menu");
         fileToolbarButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         toolbar.add(fileToolbarButton);
 
         editToolbarButton.setText("Edit");
+        editToolbarButton.setToolTipText("Edit menu");
         toolbar.add(editToolbarButton);
 
         helpToolbarButton.setText("Help");
+        helpToolbarButton.setToolTipText("Page with help on how to use the tool");
         toolbar.add(helpToolbarButton);
 
         aboutToolbarButton.setText("About");
+        aboutToolbarButton.setToolTipText("Information about the tool");
         toolbar.add(aboutToolbarButton);
 
         setJMenuBar(toolbar);
