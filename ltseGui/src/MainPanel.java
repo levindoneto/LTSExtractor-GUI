@@ -64,6 +64,11 @@ public class MainPanel extends javax.swing.JFrame {
         specificationButton.setBackground(new java.awt.Color(176, 190, 197));
         specificationButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         specificationButton.setText("Upload File");
+        specificationButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                specificationButtonMouseClicked(evt);
+            }
+        });
         specificationButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 specificationButtonActionPerformed(evt);
@@ -129,6 +134,11 @@ public class MainPanel extends javax.swing.JFrame {
         listOfLogsButton.setBackground(new java.awt.Color(176, 190, 197));
         listOfLogsButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         listOfLogsButton.setText("Upload File");
+        listOfLogsButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                listOfLogsButtonMouseClicked(evt);
+            }
+        });
         listOfLogsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 listOfLogsButtonActionPerformed(evt);
@@ -147,6 +157,11 @@ public class MainPanel extends javax.swing.JFrame {
         refinementButton.setBackground(new java.awt.Color(176, 190, 197));
         refinementButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         refinementButton.setText("Upload File");
+        refinementButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                refinementButtonMouseClicked(evt);
+            }
+        });
         refinementButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refinementButtonActionPerformed(evt);
@@ -190,6 +205,19 @@ public class MainPanel extends javax.swing.JFrame {
     private void filterButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filterButtonMouseClicked
         File filterFile = getFileFromUser(); 
     }//GEN-LAST:event_filterButtonMouseClicked
+
+    private void refinementButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_refinementButtonMouseClicked
+        File refinementFile = getFileFromUser(); 
+        
+    }//GEN-LAST:event_refinementButtonMouseClicked
+
+    private void listOfLogsButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listOfLogsButtonMouseClicked
+        File listOfLogsFile = getFileFromUser(); 
+    }//GEN-LAST:event_listOfLogsButtonMouseClicked
+
+    private void specificationButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_specificationButtonMouseClicked
+        File specificationFile = getFileFromUser();
+    }//GEN-LAST:event_specificationButtonMouseClicked
 
     private File getFileFromUser() {                                          
         JFileChooser fileChooser = new JFileChooser();

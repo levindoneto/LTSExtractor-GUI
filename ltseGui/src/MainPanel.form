@@ -105,6 +105,7 @@
         <Property name="text" type="java.lang.String" value="Upload File"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="specificationButtonMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="specificationButtonActionPerformed"/>
       </Events>
       <Constraints>
@@ -249,6 +250,7 @@
         <Property name="text" type="java.lang.String" value="Upload File"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="listOfLogsButtonMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="listOfLogsButtonActionPerformed"/>
       </Events>
       <Constraints>
@@ -289,6 +291,7 @@
         <Property name="text" type="java.lang.String" value="Upload File"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="refinementButtonMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refinementButtonActionPerformed"/>
       </Events>
       <Constraints>
