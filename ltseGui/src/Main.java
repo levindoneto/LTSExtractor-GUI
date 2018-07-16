@@ -17,9 +17,13 @@ public class Main {
      */
     public static void main(String[] args) throws IOException {
         MainPanel ltseGui = new MainPanel();
-        URL resource = ltseGui.getClass().getResource("icon.png");
-        BufferedImage image = ImageIO.read(resource);
-        ltseGui.setIconImage(image);       
+        try {
+            URL resource = ltseGui.getClass().getResource("icon.png");
+            BufferedImage image = ImageIO.read(resource);
+            ltseGui.setIconImage(image);  
+        } catch (IOException e) {
+            e.printStackTrace();
+        }      
         ltseGui.setTitle("LTS Extractor");
         ltseGui.setResizable(false); // fixed size
         ltseGui.setVisible(true);
