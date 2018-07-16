@@ -46,7 +46,7 @@ public class MainPanel extends javax.swing.JFrame {
         panelTextArea.setRows(5);
         jScrollPane2.setViewportView(panelTextArea);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 620, 300));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 620, 300));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -74,7 +74,7 @@ public class MainPanel extends javax.swing.JFrame {
                 specificationButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(specificationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, 173, -1));
+        getContentPane().add(specificationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, 173, -1));
 
         filterLabel.setBackground(new java.awt.Color(55, 71, 79));
         filterLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -82,7 +82,7 @@ public class MainPanel extends javax.swing.JFrame {
         filterLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         filterLabel.setText("Filter");
         filterLabel.setOpaque(true);
-        getContentPane().add(filterLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 32));
+        getContentPane().add(filterLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 310, 32));
 
         specificationLabel.setBackground(new java.awt.Color(55, 71, 79));
         specificationLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -90,7 +90,7 @@ public class MainPanel extends javax.swing.JFrame {
         specificationLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         specificationLabel.setText("Specification");
         specificationLabel.setOpaque(true);
-        getContentPane().add(specificationLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 310, 32));
+        getContentPane().add(specificationLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, 310, 32));
 
         refinementLabel.setBackground(new java.awt.Color(55, 71, 79));
         refinementLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -98,7 +98,7 @@ public class MainPanel extends javax.swing.JFrame {
         refinementLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         refinementLabel.setText("                                                   Refinement");
         refinementLabel.setOpaque(true);
-        getContentPane().add(refinementLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 621, 32));
+        getContentPane().add(refinementLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 621, 32));
 
         panelLabel.setBackground(new java.awt.Color(55, 71, 79));
         panelLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -106,7 +106,7 @@ public class MainPanel extends javax.swing.JFrame {
         panelLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         panelLabel.setText("Panel");
         panelLabel.setOpaque(true);
-        getContentPane().add(panelLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 621, 32));
+        getContentPane().add(panelLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 620, 32));
 
         listOfLogsLabel.setBackground(new java.awt.Color(55, 71, 79));
         listOfLogsLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -114,7 +114,7 @@ public class MainPanel extends javax.swing.JFrame {
         listOfLogsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         listOfLogsLabel.setText("List of Logs");
         listOfLogsLabel.setOpaque(true);
-        getContentPane().add(listOfLogsLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 310, 32));
+        getContentPane().add(listOfLogsLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 310, 32));
 
         filterButton.setBackground(new java.awt.Color(176, 190, 197));
         filterButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -129,7 +129,7 @@ public class MainPanel extends javax.swing.JFrame {
                 filterButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(filterButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 173, -1));
+        getContentPane().add(filterButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 173, -1));
 
         listOfLogsButton.setBackground(new java.awt.Color(176, 190, 197));
         listOfLogsButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -144,7 +144,7 @@ public class MainPanel extends javax.swing.JFrame {
                 listOfLogsButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(listOfLogsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 173, -1));
+        getContentPane().add(listOfLogsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 270, 173, -1));
 
         actionLabel.setBackground(new java.awt.Color(55, 71, 79));
         actionLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -152,7 +152,7 @@ public class MainPanel extends javax.swing.JFrame {
         actionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         actionLabel.setText("Action");
         actionLabel.setOpaque(true);
-        getContentPane().add(actionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 621, 32));
+        getContentPane().add(actionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 621, 32));
 
         refinementButton.setBackground(new java.awt.Color(176, 190, 197));
         refinementButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -167,7 +167,7 @@ public class MainPanel extends javax.swing.JFrame {
                 refinementButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(refinementButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 173, -1));
+        getContentPane().add(refinementButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 173, -1));
 
         fileToolbarButton.setText("File");
         toolbar.add(fileToolbarButton);
@@ -208,7 +208,6 @@ public class MainPanel extends javax.swing.JFrame {
 
     private void refinementButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_refinementButtonMouseClicked
         File refinementFile = getFileFromUser(); 
-        
     }//GEN-LAST:event_refinementButtonMouseClicked
 
     private void listOfLogsButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listOfLogsButtonMouseClicked
