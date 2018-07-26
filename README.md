@@ -26,7 +26,6 @@ Partial version of the LTSE Gui v1.0 can be seen in the image below.
 
 ![ltse_gui](resources/img/ltse-gui-v1.0.jpg)
 
-ltse-gui-v1.0
 ## Java Specifications
 ```
 java version "1.8.0_161"
