@@ -188,7 +188,6 @@ public class MainPanel extends javax.swing.JFrame {
 
         buttonGroup1.add(callModeActionButton);
         callModeActionButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        callModeActionButton.setSelected(false);
         callModeActionButton.setText("Call Mode");
         callModeActionButton.setToolTipText("Action name \"m\" represents the call of the corresponding method m");
         callModeActionButton.addActionListener(new java.awt.event.ActionListener() {
@@ -218,6 +217,11 @@ public class MainPanel extends javax.swing.JFrame {
         fileToolbarButton.setText("File");
         fileToolbarButton.setToolTipText("File menu");
         fileToolbarButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        fileToolbarButton.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                fileToolbarButtonFocusGained(evt);
+            }
+        });
         toolbar.add(fileToolbarButton);
 
         editToolbarButton.setText("Edit");
@@ -276,6 +280,10 @@ public class MainPanel extends javax.swing.JFrame {
     private void terminationModeActionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_terminationModeActionButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_terminationModeActionButtonActionPerformed
+
+    private void fileToolbarButtonFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_fileToolbarButtonFocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fileToolbarButtonFocusGained
 
     private File getFileFromUser() {                                          
         JFileChooser fileChooser = new JFileChooser();
