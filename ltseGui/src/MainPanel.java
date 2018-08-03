@@ -43,10 +43,18 @@ public class MainPanel extends javax.swing.JFrame {
         terminationModeActionButton = new javax.swing.JRadioButton();
         enterModeActionButton = new javax.swing.JRadioButton();
         toolbar = new javax.swing.JMenuBar();
-        fileToolbarButton = new javax.swing.JMenu();
+        loadToolbarFile = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        saveToolbarFile = new javax.swing.JMenuItem();
+        closeToolbarFile = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        jMenuItem2 = new javax.swing.JMenuItem();
         editToolbarButton = new javax.swing.JMenu();
+        editToolbarEdit = new javax.swing.JMenuItem();
         helpToolbarButton = new javax.swing.JMenu();
-        aboutToolbarButton = new javax.swing.JMenu();
+        documentationToolbarHelp = new javax.swing.JMenuItem();
+        aboutLtseToolbarAbout = new javax.swing.JMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
 
         jRadioButton1.setText("jRadioButton1");
 
@@ -214,27 +222,78 @@ public class MainPanel extends javax.swing.JFrame {
         enterModeActionButton.setToolTipText("action name \"m.enter\" represents the beginning of the execution of corresponding method m, whereas \"m.exit\" represents the end of the execution");
         getContentPane().add(enterModeActionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, -1, -1));
 
-        fileToolbarButton.setText("File");
-        fileToolbarButton.setToolTipText("File menu");
-        fileToolbarButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        fileToolbarButton.addFocusListener(new java.awt.event.FocusAdapter() {
+        toolbar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        toolbar.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+
+        loadToolbarFile.setText("File");
+        loadToolbarFile.setToolTipText("File menu");
+        loadToolbarFile.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        loadToolbarFile.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                fileToolbarButtonFocusGained(evt);
+                loadToolbarFileFocusGained(evt);
             }
         });
-        toolbar.add(fileToolbarButton);
+
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem1.setText("Load new model");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        loadToolbarFile.add(jMenuItem1);
+
+        saveToolbarFile.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
+        saveToolbarFile.setText("Save model");
+        loadToolbarFile.add(saveToolbarFile);
+
+        closeToolbarFile.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        closeToolbarFile.setText("Save model as");
+        loadToolbarFile.add(closeToolbarFile);
+        loadToolbarFile.add(jSeparator1);
+
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem2.setText("Close model");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        loadToolbarFile.add(jMenuItem2);
+
+        toolbar.add(loadToolbarFile);
 
         editToolbarButton.setText("Edit");
         editToolbarButton.setToolTipText("Edit menu");
+
+        editToolbarEdit.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_MASK));
+        editToolbarEdit.setText("Edit model");
+        editToolbarButton.add(editToolbarEdit);
+
         toolbar.add(editToolbarButton);
 
         helpToolbarButton.setText("Help");
         helpToolbarButton.setToolTipText("Page with help on how to use the tool");
+
+        documentationToolbarHelp.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        documentationToolbarHelp.setText("Documentation");
+        helpToolbarButton.add(documentationToolbarHelp);
+
         toolbar.add(helpToolbarButton);
 
-        aboutToolbarButton.setText("About");
-        aboutToolbarButton.setToolTipText("Information about the tool");
-        toolbar.add(aboutToolbarButton);
+        aboutLtseToolbarAbout.setText("About");
+        aboutLtseToolbarAbout.setToolTipText("Information about the tool");
+
+        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem5.setText("About LTSE");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        aboutLtseToolbarAbout.add(jMenuItem5);
+
+        toolbar.add(aboutLtseToolbarAbout);
 
         setJMenuBar(toolbar);
 
@@ -281,9 +340,21 @@ public class MainPanel extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_terminationModeActionButtonActionPerformed
 
-    private void fileToolbarButtonFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_fileToolbarButtonFocusGained
+    private void loadToolbarFileFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_loadToolbarFileFocusGained
         // TODO add your handling code here:
-    }//GEN-LAST:event_fileToolbarButtonFocusGained
+    }//GEN-LAST:event_loadToolbarFileFocusGained
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private File getFileFromUser() {                                          
         JFileChooser fileChooser = new JFileChooser();
@@ -323,13 +394,14 @@ public class MainPanel extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MainPanel().setVisible(true);
+                MainPanel mp = new MainPanel();
+                mp.setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu aboutToolbarButton;
+    private javax.swing.JMenu aboutLtseToolbarAbout;
     private javax.swing.JLabel actionLabel;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
@@ -338,21 +410,29 @@ public class MainPanel extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup5;
     private javax.swing.ButtonGroup buttonGroup6;
     private javax.swing.JRadioButton callModeActionButton;
+    private javax.swing.JMenuItem closeToolbarFile;
+    private javax.swing.JMenuItem documentationToolbarHelp;
     private javax.swing.JMenu editToolbarButton;
+    private javax.swing.JMenuItem editToolbarEdit;
     private javax.swing.JRadioButton enterModeActionButton;
-    private javax.swing.JMenu fileToolbarButton;
     private javax.swing.JButton filterButton;
     private javax.swing.JLabel filterLabel;
     private javax.swing.JMenu helpToolbarButton;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JButton listOfLogsButton;
     private javax.swing.JLabel listOfLogsLabel;
+    private javax.swing.JMenu loadToolbarFile;
     private javax.swing.JLabel panelLabel;
     private javax.swing.JTextArea panelTextArea;
     private javax.swing.JButton refinementButton;
     private javax.swing.JLabel refinementLabel;
+    private javax.swing.JMenuItem saveToolbarFile;
     private javax.swing.JButton specificationButton;
     private javax.swing.JLabel specificationLabel;
     private javax.swing.JRadioButton terminationModeActionButton;
