@@ -1,0 +1,78 @@
+\documentclass[a4paper,12pt,twoside]{article}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{times}
+
+\usepackage{mathtools}
+\pagenumbering{gobble}
+\title{ 
+Desenvolvimento de uma interface gráfica para a ferramenta \textit{LTSE} \\ ~ \\
+\normalsize Levindo Gabriel Taschetto Neto \\ Orientador Lucio Mauro Duarte\\
+\small Instituto de Informática - Universidade Federal do Rio Grande do Sul
+}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+\vspace{-1.7cm}
+
+
+% Estrutura:
+% Introdução:
+%  Desenvolvimento:
+%  -> Metodologia utilizados
+%  -> Resultados obtidos até o momento
+%  Conclusão: encerrar
+
+% Blocos:
+% Bloco #1 - Contexto: Descrição do contexto no qual o trabalho está inserido
+%            para quem não é da área, algo como: “A extensão para o LTSE contribui de tal
+%            maneira para os usuários...".
+% Bloco #2 - Problema: Descrição do problema que está sendo abordado. No caso,
+%            o de facilitar o uso da plataforma LTSE, e também pensei em colocar o problema
+%            que o próprio LTSE resolve.
+% Bloco #3 - Metodologia/solução/resultados: Descrição do trabalho que de fato
+%            foi feito (tentar não focar tanto na implementação em si, mas em sua estrutura
+%            e maneira que está organizada).
+% Bloco #4 - Conclusão/trabalhos futuros: Descrição do benefício esperado
+%            ("esse trabalho ajudará usuários a ter um melhor uso da plataforma", etc) e os
+%            planos para trabalhos futuros (a ideia é mostrar nessa parte que essa linha de
+%            pesquisa não é um “dead-end”, e que pode gerar mais desdobramentos).
+
+
+%------------------------------------------- Introdução [Contexto] ------------------------------------------
+No projeto \textit{VeriTeS} estão sendo desenvolvidos trabalhos na área de validação, verificação e testes de sistemas computacionais com uso de técnicas e ferramentas com foco na análise de modelos de comportamento de software.
+O projeto tem como objetivo o desenvolvimento de diretivas para o desenvolvimento de software baseado em modelos.
+Dentro desse escopo, a ferramenta \textit{Labelled Transition Systems Extractor (LTSE)} é utilizada para a obtenção de modelos a partir de códigos existentes, habilitando a análise de sistemas já em execução.
+
+%------------------------------------------------ Problema----------------------------------------------------
+Todavia, a ferramenta possuía problemas de \textit{input} de dados, em função de dificuldades em ter parâmetros de entradas fornecidos para a mesma.
+Ademais, a visualização dos dados gerados era um problema, uma vez que não se tinha uma interface gráfica para apresentar os resultados obtidos depois da execução da aplicação.
+Um dos principais problemas que a extensão desenvolvida resolve é o de facilitação do uso do \textit{LTSE} para todos os utilizadores da ferramenta. Isso se deve ao fato de que a plataforma, em suas versões mais antigas, disponibilizava apenas a inserção de comandos por meio de linha de comando.
+Dessa maneira com a qual a inserção de informações era realizada, a ferramenta era mais suscetível a gerar resultados incorretos do ponto de vista do usuário.
+Além disso, a usabilidade da plataforma era afetada diretamente, uma vez que usuários precisavam saber determinados comandos e formatos de parâmetro de terminal para executar a ferramenta com as configurações desejadas.
+
+%--------------------------------------- Metodologia/Solução/Resultados --------------------------------------
+
+A solução encontrada para facilitar a utilização da ferramenta \textit{LTSE} foi a da criação de uma extensão \textit{GUI (graphical user interface)} para a mesma.
+A extensão foi desenvolvida na linguagem de programação Java, a qual é a mesma na qual a ferramenta \textit{LTSE} foi desenvolvida.
+Conceitos de orientação a objetos foram fortemente utilizados ao longo do desenvolvimento, de forma que a aplicação tivesse: (i) níveis de abstração bem definidos, (ii) flexibilidade no fluxo de dados que são trocados entre usuário e o \textit{backend} do \textit{LTSE}, e (iii) fosse fácil de ser estendida e integrada a outras ferramentas.
+A \textit{GUI} encontra-se disponível de maneira \textit{open source} e pode ser facilmente integrada em projetos do mesmo cunho teórico e estrutural da ferramenta \textit{LTSE}, podendo assim, auxiliar também no trabalho de outros pesquisadores.
+
+%----------------------------------------- Conclusão/Trabalhos futuros ----------------------------------------
+
+Trabalhos futuros incluem explorar outras propriedades de modelagem de software dentro da extensão desenvolvida.
+Ademais, testes unitários e de integração serão criados para a \textit{GUI}, fazendo com que a mesma se torne ainda mais robusta e confiável.
+Trabalhos já estão em andamento para o melhoramento do design da extensão criada, com a utilização de componentes adaptados da biblioteca de interface Material-UI.
+Todo trabalho desenvolvido até o momento se concentra em auxiliar usuários a poder gerar e avaliar modelos de software de maneira simples, rápida e eficaz.
+
+\end{document}
