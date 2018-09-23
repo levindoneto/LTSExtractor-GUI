@@ -7,6 +7,6 @@ addons:
   apt:
     packages:
       - oracle-java8-installer
-before_script: cd src/
 script:
-  - javac com/ltse/gui/Main.java
+  - javac src/com/ltse/gui/Main.java
+  - javac ltse-tool/ltse/LTSExtractor.java
