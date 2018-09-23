@@ -1,0 +1,35 @@
+﻿* Colors (MATERIAL-UI):
+** Background:
+*** Main Page: #ECEFF1 (BLUE_GREY50)
+*** Inner labels: #37474F (BLUE_GREY800)
+*** Main bar: #EEEEEE (GREY200)
+*** Characters Inner labels: #FFFFFF (White)
+*** Panel’s background: #FFFFFF (White)
+*** Checkboxes’ background: #607D8B (BLUE_GREY500)
+*** Labels of the Checkboxes’ background: #90A4AE (BLUE_GREY300)
+*** Texts of the Checkboxes’ background: #000000 (Black)
+*** Load file button: #EEEEEE (GREY200)
+
+Layout: absolute
+
+* Sizes:
+** Window: Fixed (L:?, W:?)
+
+
+* Available Buttons:
+** Window bar:
+*** File
+**** Load new model
+**** Save model as
+*** Edit (Removes current model and upload new one)
+*** Help
+*** About
+
+
+*Features:
+** Tooltips in every sub-menu
+
+
+* Tooltips:
+** Buttons:
+*** Upload file: Load a file from your machine
