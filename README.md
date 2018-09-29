@@ -1,4 +1,5 @@
 # LTS Extractor GUI
+[![build status](https://img.shields.io/travis/levindoneto/LTSExtractor-GUI.svg?branch=master?style=flat-square)](https://travis-ci.org/levindoneto/LTSExtractor-GUI.svg?branch=master)
 
 Extension for the LTS Extractor platform which is used for enabling the communication with the methods 
 for generating model analysis, and to ease the management of log files throughout the platform.
