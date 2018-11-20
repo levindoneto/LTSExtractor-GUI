@@ -25,7 +25,7 @@ __Advisor:__ [Prof. Lucio Mauro Duarte](http://inf.ufrgs.br/~lmduarte/).
 
 Partial version of the LTSE Gui v1.0 can be seen in the image below.
 
-![ltse_gui](resources/img/ltse-gui-v1.0.jpg)
+![ltse_gui](resources/img/ltsext-gui.png)
 
 ## Java Specifications
 ```
